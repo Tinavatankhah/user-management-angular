@@ -1,0 +1,23 @@
+<div>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>نام و نام خانوادگی</th>
+      <th>ایمیل</th>
+      <th>نقش</th>
+      <th>وضعیت</th>
+      <th>عملیات</th>
+    </tr>
+
+    @for (user of users; track user.id) {
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.fullName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+        <td>{{ user.status }}</td>
+        <td><app-buttons></app-buttons></td>
+      </tr>
+    }
+  </table>
+</div>

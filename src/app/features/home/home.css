@@ -1,0 +1,22 @@
+
+div{
+    box-sizing: border-box;
+    background-color: azure;
+    text-align: center;
+    padding:100px;
+    
+}
+p{
+    font-size: 18px;
+}
+    button{
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 45%;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    background-color: #ffdef6;
+    cursor: pointer;
+}

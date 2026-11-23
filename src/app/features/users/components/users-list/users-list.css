@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+}
+th,
+td {
+  padding: 20px;
+}
+th {
+  background: #f6e7ff;
+}
+th:last-child {
+  border-top-left-radius: 10px;
+}
+tr {
+  border: 1px solid #f6e7ff;
+}
+tr:first-child {
+  border: none;
+}
+th:first-child {
+  border-top-right-radius: 10px;
+}

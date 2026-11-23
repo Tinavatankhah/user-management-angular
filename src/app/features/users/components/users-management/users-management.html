@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="top">
+    <div>
+      <h2>فهرست کاربران</h2>
+      <p>مشاهده،جستجو و مدیریت کاربران سیستم</p>
+    </div>
+    <button>
+      <span class="plus">+</span>
+      <p>افزودن کاربر جدید</p>
+    </button>
+  </div>
+  <div class="filter-search-container">
+    <input type="text" placeholder="جستجوی کاربر (نام،ایمیل و...)" class="search" />
+    <select name="sort">
+      <option value="همه نقش ها ">همه نقش ها</option>
+      <option value="مدیر سیستم">مدیر سیستم</option>
+      <option value="کاربر عادی">کاربر عادی</option>
+      <option value="اپراتور">اپراتور</option>
+    </select>
+  </div>
+  <app-users-list></app-users-list>
+</div>

@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  padding: 20px;
+  background: #e6eaff;
+}
+h2 {
+  font-size: 30px;
+  color: #5f51eb;
+  text-align: center;
+}
