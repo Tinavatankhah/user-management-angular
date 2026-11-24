@@ -1,0 +1,11 @@
+نام و نام خانوادگی:
+<input name="fullName" (change)="change()" type="text" [(ngModel)]="user.fullName" placeholder="نام و نام خانوادگی"/>
+ایمیل:
+<input name="email" (change)="change()" type="email" class="email" [(ngModel)]="user.email" placeholder="ایمیل"/>
+نقش:
+<select (change)="change()" [(ngModel)]="user.role">
+  <option  value="مدیر سیستم">مدیر سیستم</option>
+  <option  value="کاربر عادی">کاربر عادی</option>
+  <option  value="اپراتور">اپراتور</option>
+</select>
+

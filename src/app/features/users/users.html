@@ -1,9 +1,12 @@
 <div class="container">
-<a [routerLink]="['/users']" [queryParams]="{
-    role:'admin'
-}" >
-    صفحه اصلی 
-</a>
-  <app-users-management></app-users-management>
+  <a
+    [routerLink]="['/users']"
+    [queryParams]="{
+      role: 'admin',
+    }"
+  >
+    صفحه اصلی
+  </a>
+
   <router-outlet></router-outlet>
 </div>

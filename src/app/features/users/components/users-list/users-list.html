@@ -9,15 +9,17 @@
       <th>عملیات</th>
     </tr>
 
-    @for (user of users; track user.id) {
-      <tr>
-        <td>{{ user.id }}</td>
-        <td>{{ user.fullName }}</td>
-        <td>{{ user.email }}</td>
-        <td>{{ user.role }}</td>
-        <td>{{ user.status }}</td>
-        <td><app-buttons></app-buttons></td>
-      </tr>
+    @for (user of sortedUsers; track user.id; let index = $index) {
+      @if (user.show) {
+        <tr>
+          <td>{{ $index + 1 }}</td>
+          <td>{{ user.fullName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>{{ user.status }}</td>
+          <td><app-buttons [user]="user"></app-buttons></td>
+        </tr>
+      }
     }
   </table>
 </div>

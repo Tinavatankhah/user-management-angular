@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { usersData } from '../../../../../data';
 
 @Component({
   selector: 'app-buttons',
@@ -6,4 +8,18 @@ import { Component } from '@angular/core';
   templateUrl: './buttons.html',
   styleUrl: './buttons.css',
 })
-export class Buttons {}
+export class Buttons {
+  router = inject(Router);
+  @Input({ required: true }) user!: IUser;
+
+  UsersData: IUser[] = usersData;
+  delete() {
+    const user = this.UsersData.filter((u) => u.id == this.user.id)[0];
+    const index = this.UsersData.indexOf(user);
+    this.UsersData.splice(index, 1);
+  }
+  hide(){
+    this.user.show=false
+    console.log(this.user)
+  }
+}

@@ -6,7 +6,7 @@
   background-color: azure;
   padding: 15px;
   width: 70%;
-  margin:20px auto;
+  margin: 20px auto;
   border-radius: 10px;
 }
 .top {
@@ -25,9 +25,21 @@
   outline: none;
   border-radius: 12px;
 }
+.search-container {
+  width: 60%;
+  display: flex;
+}
 .filter-search-container {
   display: flex;
   justify-content: space-between;
+}
+.show-hidden {
+  padding: 10px;
+  margin: 10px auto;
+  
+}
+svg {
+  width: 20px;
 }
 select {
   padding: 10px 6px;

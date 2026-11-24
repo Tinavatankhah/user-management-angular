@@ -1,0 +1,22 @@
+input {
+  display: block;
+  padding: 10px 16px;
+  width: 80%;
+  border: 2px solid #eae9e9;
+  outline: none;
+  border-radius: 12px;
+  margin:20px auto;
+}
+select {
+  display: block;
+  padding: 10px 6px;
+  width: 50%;
+  margin:20px auto;
+  border: 2px solid #eae9e9;
+  outline: none;
+  border-radius: 12px;
+}
+
+.email{
+    direction: ltr;
+}

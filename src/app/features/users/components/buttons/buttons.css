@@ -1,0 +1,10 @@
+button{
+    border: none;
+    padding: 5px;
+    border-radius: 9px;
+    margin: 2px;
+    cursor: pointer;
+}
+svg{
+    height: 20px;
+}

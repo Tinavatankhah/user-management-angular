@@ -1,0 +1,22 @@
+div {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ff00a97d;
+  border-radius: 20px;
+  padding: 60px 20px;
+}
+button {
+  display: block;
+  padding: 10px 6px;
+  width: 30%;
+  margin: 30px auto;
+  border: 2px solid #eae9e9;
+  background: #ff00a97d;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+p{
+  margin-bottom: 31px;
+}

@@ -1,0 +1,9 @@
+<div class="edit-container">
+  <p> 
+       اطلاعات کاربر جدید
+    </p>
+  <form>
+    <app-user-form (newUserData)="getNewUser($event)"></app-user-form>
+    <button (click)="add()">add</button>
+  </form>
+</div>
