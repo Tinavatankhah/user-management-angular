@@ -1,59 +1,57 @@
-# Proj2
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.29.
+# پروژه مدیریت کاربران
 
-## Development server
 
-To start a local development server, run:
+## 1.انتخاب نقش
 
-```bash
-ng serve
-```
+در صفحه اصلی برای نشان دادن استفاده از authGuard دو نقش ادمین و کاربر عادی وجود دارد.
+هردو کاربر با query parameters توسط authGuard چک میشوند
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+ادمین به صفحه بعدی میرود در حالی که
+کاربر عادی اجازه رفتن به صفحه بعد را ندارد.
+<img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/c82537bc-3ab8-4da9-935b-5b5f6bf014c0" />
 
-## Code scaffolding
+## 2.ساختار Layout 
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+هدر و فوتر برای تمامی صفحات، مشترک است ,
+صفحه users  علاوه بر هدر و فوتر مشترک layout خاص دارد
+ فرزندان users صفحات add و edit از این layout خاص علاوه بر مشترک بهره مند هستند.
 
-```bash
-ng generate component component-name
-```
+<img width="1916" height="960" alt="image" src="https://github.com/user-attachments/assets/45d6d3b6-a40a-4879-8f3a-3a02053854fb" />
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## عملیات مدیریت کاربران
 
-## Building
 
-To build the project run:
+Add: 
 
-```bash
-ng build
-```
+اضافه کردن کاربر جدید
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Edit: 
 
-## Running unit tests
+ویرایش اطلاعات کاربر
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Show: 
 
-```bash
-ng test
-```
+مخفی کردن کاربر
 
-## Running end-to-end tests
+Show hidden: 
 
-For end-to-end (e2e) testing, run:
+نشان دادن کاربران مخفی
 
-```bash
-ng e2e
-```
+Delete:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+ حذف کاربر
 
-## Additional Resources
+<img width="1917" height="963" alt="image" src="https://github.com/user-attachments/assets/9827d9b6-f5fb-4012-96ee-c4b3b9c1bbcf" />
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## 4.جستجو و فیلتر کردن
+جستجوی کاربران بر اساس نام و نام خانوادگی
+
+جستجوی کاربران بر اساس ایمیل
+
+فیلتر کردن کاربران براساس نقش
+<img width="1915" height="961" alt="image" src="https://github.com/user-attachments/assets/c07fdba0-c18c-48b4-bc86-e65a6f224ead" />
+
+
